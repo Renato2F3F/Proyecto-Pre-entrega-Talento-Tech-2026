@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <header>
+<!-- Acá estamos dentro del header-->
+    <h1>Bienvenidos a Mi Proyecto</h1>
+    <h2>Este es un subtítulo en el header</h2>
+    <img src="/Img/logo.png" alt="Logo" width="200"
+height="100">
+</header>
+<style>
+h1 {
+color: blue;
+background-color: yellow;
+}
+</style>
+<p style="color: red; font-size: 14px;">Este párrafo es rojo y tiene un
+tamaño de catorce píxeles</p>
+<nav>
+<!-- Acá estamos dentro del nav-->
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+<table border="1">
+<tr>
+<th>Nombre</th>
+<th>Edad</th>
+<th>Ciudad</th>
+</tr>
+<tr>
+<td>Ana</td>
+<td>25</td>
+<td>Madrid</td>
+</tr>
+<tr>
+<td>Juan</td>
+<td>30</td>
+<td>Barcelona</td>
+</tr>
+</table>
+<table border="1">
+<tr>
+<th rowspan="2">Nombre</th>
+<th colspan="2">Contacto</th>
+</tr>
+<tr>
+<td>Teléfono</td>
+<td>Email</td>
+</tr>
+<tr>
+<td>Ana</td>
+<td>123456789</td>
+<td>ana@ejemplo.com</td>
+</tr>
+</table>
+<table border="1">
+<caption>Notas por materia</caption>
+<thead>
+<tr>
+<th scope="col">Estudiante</th>
+<th scope="col">Materia</th>
+<th scope="col">Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Ana</td>
+<td>Matemática</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Lengua</td>
+<td>8</td>
+</tr>
+<tr>
+<td colspan="2">Promedio general</td>
+<td>8.5</td>
+</tr>
+</tbody>
+</table>
+<form action="/registro" method="post" autocomplete="on">
+<label>Nombre: <input type="text" name="nombre" required></label>
+<br>
+<label>Correo: <input type="email" name="correo" required></label>
+<br>
+<button type="submit">Enviar</button>
+</form>
+<textarea name="mensaje" rows="7" cols="50"></textarea>
+<select name="opciones">
+<option value="opcion1">Opción 1</option>
+<option value="opcion2">Opción 2</option>
+</select>
+<form action="https://formspree.io/f/xqpkzqpo" method="POST">
+<label>Nombre:
+<input type="text" name="nombre" required>
+</label><br>
+<label>Email:
+<input type="email" name="email" required>
+</label><br>
+<label>Mensaje:
+<textarea name="mensaje" required></textarea>
+</label><br>
+<!-- Campo oculto para redirección -->
+<input type="hidden" name="_redirect"
+value="https://tusitio.com/gracias.html">
+</label><br>
+<button type="submit">Enviar</button>
+</form>
+<main>
+<!-- Acá estamos dentro del main-->
+    <p>Este es un párrafo de introducción sobre el proyecto. Aquí puedes
+    usar <strong>negrita</strong>, <em>cursiva</em>, y <s>tachado</s>.</p>
+</main>
+<section>
+    <h2>Contenido Adicional</h2>
+    <video controls poster="preview.jpg" width="600" height="400">
+<source src="/Media/AI_Brain00.mp4" type="video/mp4">
+Tu navegador no soporta la reproducción de video.
+</video>
+    <p>Este es un párrafo dentro de la sección adicional.</p>
+</section>
+<footer>
+<!-- Acá estamos dentro del footer-->
+    <p>Este es el pie de página con la información de contacto.</p>
+</footer>
+</body>
+</html>
